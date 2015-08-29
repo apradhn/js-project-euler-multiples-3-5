@@ -9,3 +9,16 @@ function collectMultiples(limit) {
   }
   return multiples;
 }
+
+function sumMultiples(limit) {
+  var sum = 0;
+  var num;
+  var multiples = collectMultiples(limit)
+
+  for (var i = 0; i < multiples.length; i++) {
+    num = multiples[i];
+    sum += num;
+  };
+
+  return sum;
+}
